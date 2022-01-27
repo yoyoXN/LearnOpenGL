@@ -8,6 +8,7 @@ class Texture : public Application
 {
 private:
     unsigned int VAO;
+    unsigned int texture[2];
 public:
     void Iniatialize() override;
     void OnDraw() override;

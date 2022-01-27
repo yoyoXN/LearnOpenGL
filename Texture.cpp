@@ -31,7 +31,6 @@ void Texture::Iniatialize()
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-    unsigned int texture[2];
     glGenTextures(2, texture);
 
     glActiveTexture(GL_TEXTURE0);
@@ -52,14 +51,16 @@ void Texture::Iniatialize()
     glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    stbi_set_flip_vertically_on_load(true);
     int width1, height1, nrChannels1;
     stbi_uc* data1 = stbi_load("../resources/textures/awesomeface.png", &width1, &height1, &nrChannels1, 0);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width1, height1, 0, GL_RGB, GL_UNSIGNED_BYTE, data1);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width1, height1, 0, GL_RGBA, GL_UNSIGNED_BYTE, data1);
     glGenerateMipmap(GL_TEXTURE_2D);
     stbi_image_free(data1);
 
+    shader->use();
     shader->setInt("curTexture0", 0);
-    shader->setInt("curTexture0", 1);
+    shader->setInt("curTexture1", 1);
 }
 
 

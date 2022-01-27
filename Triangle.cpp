@@ -27,8 +27,7 @@ void Triangle::OnDraw()
 
     float time = glfwGetTime();
     float green = (sin(time) / 2.0f) + 0.5f;
-    int colorUniform = glGetUniformLocation(shaderProgram, "ourColor");
-    glUniform4f(colorUniform, 0.0f, green, 0.0f, 1.0f);
+    shader->setFloat4("ourColor", 0.0f, green, 0.0f, 1.0f);
     glBindVertexArray(VAO);
     glDrawArrays(GL_TRIANGLES, 0, 3);
 }

@@ -94,7 +94,12 @@ public:
 
     void setFloat4(const std:: string &name, float x, float y, float z, float w)
     {
-        glad_glUniform4f(glGetUniformLocation(ID, name.c_str()), x, y, z, w);
+        glUniform4f(glGetUniformLocation(ID, name.c_str()), x, y, z, w);
+    }
+
+    void getInt(const std::string &name, GLint* value)
+    {
+        glGetUniformiv(ID, glGetUniformLocation(ID, name.c_str()), value);
     }
 
 private:

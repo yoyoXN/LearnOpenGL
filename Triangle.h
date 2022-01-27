@@ -12,7 +12,6 @@ public:
 
 private:
     unsigned int VAO;
-    unsigned int shaderProgram;
     const char *vertexShaderSource = "#version 460 core\n"
                                      "\n"
                                      "layout (location = 0) in vec3 aPos;\n"
