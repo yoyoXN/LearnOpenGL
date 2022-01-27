@@ -1,5 +1,5 @@
 * ### 没用到的uniform会被删掉
-curTexture0没有用到，会被优化掉，并且由于优化时机不确定，在initialize给curTexture1赋到单元1也会被清掉，优化后curTexture1被自动赋到单元0
+curTexture0没有用到，会在编译时被优化掉
 ```
 #version 460 core
 
