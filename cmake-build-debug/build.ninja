@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_LearnOpenGL: phony || CMakeFiles\LearnOp
 
 build CMakeFiles\LearnOpenGL.dir\main.cpp.obj: CXX_COMPILER__LearnOpenGL_Debug G$:\LearnOpenGL\main.cpp || cmake_object_order_depends_target_LearnOpenGL
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
-  INCLUDES = -IG:\LearnOpenGL\glfw\include -IG:\LearnOpenGL\glad\include
+  INCLUDES = -IG:\LearnOpenGL\glfw\include -IG:\LearnOpenGL\glad\include -IG:\LearnOpenGL\glm
   OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
   OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir
   TARGET_COMPILE_PDB = CMakeFiles\LearnOpenGL.dir\
@@ -59,7 +59,7 @@ build CMakeFiles\LearnOpenGL.dir\main.cpp.obj: CXX_COMPILER__LearnOpenGL_Debug G
 
 build CMakeFiles\LearnOpenGL.dir\glad\src\glad.c.obj: C_COMPILER__LearnOpenGL_Debug G$:\LearnOpenGL\glad\src\glad.c || cmake_object_order_depends_target_LearnOpenGL
   FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
-  INCLUDES = -IG:\LearnOpenGL\glfw\include -IG:\LearnOpenGL\glad\include
+  INCLUDES = -IG:\LearnOpenGL\glfw\include -IG:\LearnOpenGL\glad\include -IG:\LearnOpenGL\glm
   OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
   OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir\glad\src
   TARGET_COMPILE_PDB = CMakeFiles\LearnOpenGL.dir\
@@ -67,7 +67,7 @@ build CMakeFiles\LearnOpenGL.dir\glad\src\glad.c.obj: C_COMPILER__LearnOpenGL_De
 
 build CMakeFiles\LearnOpenGL.dir\Application.cpp.obj: CXX_COMPILER__LearnOpenGL_Debug G$:\LearnOpenGL\Application.cpp || cmake_object_order_depends_target_LearnOpenGL
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
-  INCLUDES = -IG:\LearnOpenGL\glfw\include -IG:\LearnOpenGL\glad\include
+  INCLUDES = -IG:\LearnOpenGL\glfw\include -IG:\LearnOpenGL\glad\include -IG:\LearnOpenGL\glm
   OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
   OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir
   TARGET_COMPILE_PDB = CMakeFiles\LearnOpenGL.dir\
@@ -75,7 +75,7 @@ build CMakeFiles\LearnOpenGL.dir\Application.cpp.obj: CXX_COMPILER__LearnOpenGL_
 
 build CMakeFiles\LearnOpenGL.dir\Triangle.cpp.obj: CXX_COMPILER__LearnOpenGL_Debug G$:\LearnOpenGL\Triangle.cpp || cmake_object_order_depends_target_LearnOpenGL
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
-  INCLUDES = -IG:\LearnOpenGL\glfw\include -IG:\LearnOpenGL\glad\include
+  INCLUDES = -IG:\LearnOpenGL\glfw\include -IG:\LearnOpenGL\glad\include -IG:\LearnOpenGL\glm
   OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
   OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir
   TARGET_COMPILE_PDB = CMakeFiles\LearnOpenGL.dir\
@@ -83,7 +83,7 @@ build CMakeFiles\LearnOpenGL.dir\Triangle.cpp.obj: CXX_COMPILER__LearnOpenGL_Deb
 
 build CMakeFiles\LearnOpenGL.dir\Texture.cpp.obj: CXX_COMPILER__LearnOpenGL_Debug G$:\LearnOpenGL\Texture.cpp || cmake_object_order_depends_target_LearnOpenGL
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
-  INCLUDES = -IG:\LearnOpenGL\glfw\include -IG:\LearnOpenGL\glad\include
+  INCLUDES = -IG:\LearnOpenGL\glfw\include -IG:\LearnOpenGL\glad\include -IG:\LearnOpenGL\glm
   OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
   OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir
   TARGET_COMPILE_PDB = CMakeFiles\LearnOpenGL.dir\

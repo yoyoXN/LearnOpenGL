@@ -7,6 +7,8 @@ include_directories(glfw/include)
 
 include_directories(glad/include)
 
+include_directories(glm)
+
 add_executable(LearnOpenGL main.cpp glad/src/glad.c Application.cpp Application.h Triangle.cpp Triangle.h Shader.h stb_image.h Texture.cpp Texture.h)
 
 target_link_libraries(LearnOpenGL ${PROJECT_SOURCE_DIR}/lib/glfw3.lib)
